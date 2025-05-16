@@ -1,0 +1,159 @@
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+.tour__card {
+  transition: transform 0.3s ease;
+  background-color: #e9e6e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.tour__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tour__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  height: 100px;
+}
+
+.tour__img img {
+  width : 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.tour__img span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff7e5f;
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card__top {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour__location,
+.tour__rating {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tour__location i,
+.tour__rating i {
+  color: #ff7e5f;
+}
+
+.tour__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin: 10px 12px 0 12px;
+}
+
+.tour__title a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.tour__title a:hover {
+  color: #ff7e5f;
+}
+
+.tour__desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 8px 12px;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 66px;
+}
+
+.card__bottom {
+  margin-top: auto;
+  padding: 10px 12px 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking_btn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.booking_btn:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.booking_btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.4);
+}
+
+.card__bottom h5 {
+  font-size: 16px;
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card__bottom span {
+  font-size: 13px;
+  color: #888;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .tour__desc {
+    -webkit-line-clamp: 4;
+  }
+
+  .tour__title {
+    font-size: 1rem;
+  }
+
+  .booking_btn {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+}

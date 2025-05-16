@@ -1,0 +1,148 @@
+/* Section Styling */
+.hotels-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.hotels-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hotels-section p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+/* Hotel List Styling */
+.hotel-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hotel Card Styling */
+.hotel-card {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotel-card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.hotel-card .location {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.hotel-card .price {
+  font-weight: bold;
+  color: #2b9348;
+  margin-bottom: 5px;
+}
+
+.hotel-card .rating {
+  font-size: 1.2rem;
+  color: #f4c430;
+  margin-bottom: 15px;
+}
+
+.details-btn {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #ff6333;
+}
+
+/* Modal Styling */
+.modal-body img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer .btn-primary {
+  background-color: #ff7f50;
+  border-color: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #ff6333;
+}
+
+.modal-footer .btn-secondary {
+  border: none;
+  color: #d1d1d1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #f7f7f7;
+  color: #d1d1d1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hotel-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .hotel-card .price {
+    font-size: 1rem;
+  }
+
+  .hotel-card .rating {
+    font-size: 1rem;
+  }
+
+  .hotel-card .details-btn {
+    font-size: 0.9rem;
+  }
+}

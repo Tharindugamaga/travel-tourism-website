@@ -1,0 +1,96 @@
+.newsletter {
+    padding: 70px 0;
+    background: linear-gradient(to right, #f8fafc, #e0f7fa); /* soft gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter__content {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .newsletter__content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .newsletter__input {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .newsletter__input input[type="email"] {
+    flex: 1;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter__input input[type="email"]:focus {
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+  }
+  
+  .newsletter__btn {
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* modern gradient */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(78, 84, 200, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .newsletter__btn:hover {
+    background: linear-gradient(135deg, #3fc25b, #7c82f9);
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  .newsletter__img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .newsletter__input {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .newsletter__btn {
+      width: 100%;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.newsletter__text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
